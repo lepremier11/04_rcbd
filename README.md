@@ -1,2 +1,2 @@
-# 04_rcbd
-This is for the exercise of randomized complete block design
+# Exo 4 - RCBD
+This repo is for a randomized block design analysis
