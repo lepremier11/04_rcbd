@@ -106,7 +106,8 @@ Below we change the default to sum-to-zero ("contr.sum") before fitting the mode
 options(contrasts = c("contr.sum", "contr.poly"))
 
 # Model fitting
-rcbd_mod 
+rcbd_mod = lm(yield_kgha ~ rep + nrate_kgha*krate_kgha, 
+              data = rcbd_dfw)
 
 # Summary
 summary(rcbd_mod)
@@ -271,7 +272,7 @@ Remember that it is at this level that we establish the hierarchy of how our pai
 
 Let's extract it by comparing everything to everything else.
 ```{r interaction means all}
-rcbd_means_all 
+rcbd_means_all <- 
 
 rcbd_means_all
 ```
