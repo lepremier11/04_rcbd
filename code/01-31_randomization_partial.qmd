@@ -117,7 +117,7 @@ Let's check if in fact each treatment appears once per block.
 ```{r}
 rcbd_rand %>%
   group_by(rep, trtname) %>%
-  tally() #>%
+  tally() %>%
   filter(n > 1)
 ```
 
