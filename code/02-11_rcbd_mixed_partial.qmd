@@ -154,7 +154,7 @@ One difference in mixed models is that the 3 first assumptions are also applied 
 
 ### Random effects are iid ~ N(0,var_a)  
 ```{r randeff_rep}
-randeff_rep <- ranef(rcbd_mix_mod)[[1]]
+randeff_rep <- ranef(rcbd_mix_mod)[[1]] # you may use the [[1]] or you can specify the name
 
 randeff_rep
 ```
